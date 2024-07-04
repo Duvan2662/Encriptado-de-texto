@@ -134,6 +134,16 @@ button {
     font-family: 'Montserrat', sans-serif;
 }
 
+.footer{
+    background-color: white;
+    padding: 1.5rem ;
+    color: black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400 ;
+}
+
 
 /* Estilos para tablets */
 @media (max-width: 768px) {
