@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap'); 
+
+* {
+    padding: 0;
+    margin:0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #f6f6f6 ;
+    color: #000000;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f6f6;
+    padding: 10px;
+    height: 130px; /* Ajusta la altura del header para que coincida con la imagen */
+}
+
+.header__logo {
+    position: absolute;
+    left: 20px; /* Aumenta la separación desde el borde izquierdo */
+}
+
+.header__logo img {
+    height: 130px;
+}
+
+.header__title h1 {
+    font-family:'Montserrat', sans-serif;
+}
+
+
+
+/* Estilos para tablets */
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+        flex-direction: column;
+        align-items: center; /* Alinea elementos en el centro */
+        padding: 20px;
+    }
+
+    .header__logo {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    .header__logo img {
+        height: 100px; /* Ajusta el tamaño de la imagen para tablets */
+    }
+
+    .header__title h1 {
+        font-size: 24px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* Estilos para móviles */
+@media (max-width: 480px) {
+    .header {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .header__logo {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    .header__logo img {
+        height: 80px; /* Ajusta el tamaño de la imagen para móviles */
+    }
+
+    .header__title h1 {
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+
