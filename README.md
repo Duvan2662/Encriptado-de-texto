@@ -10,6 +10,8 @@ Este proyecto es parte de un desafío propuesto por [ALURA LATAM](https://www.al
 - **Interfaz Intuitiva:** Fácil de usar, con un diseño limpio y funcional.
 - **Desafío ALURA:** Cumple con los estándares y requisitos del desafío propuesto por ALURA.
 
+
 ## Video demostrativo para el uso del programa
 
+https://github.com/Duvan2662/Encriptado-de-texto/assets/116412165/8aa31316-06e9-4b04-b077-e1e9ac373432
 
