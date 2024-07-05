@@ -18,15 +18,15 @@
 
     <main class="presentacion">
         <div class="presentacion__encriptar">
-            <textarea placeholder="Ingrese el texto aqui"></textarea>
+            <textarea id="texto" placeholder="Ingrese el texto aqui"></textarea>
             <div class="presentacion__encriptar__nota">🚨 Solo letras minúsculas y sin acentos</div>
             <div class="presentacion__encriptar__botones">
-                <button id="encriptar">Encriptar</button>
-                <button id="desencriptar">Desencriptar</button>
+                <button class="btnPrincipal" id="encriptar">Encriptar</button>
+                <button class="btnSecundario" id="desencriptar">Desencriptar</button>
             </div>
         </div>
 
-        <div class="presentacion__desencriptar">
+        <div id="resultado" class="presentacion__desencriptar">
             <img class="presentacion__desencriptar__img" src="assets/buscar.png" alt="buscar">
             <p class="presentacion__desencriptar__mensaje">Ningún mensaje fue encontrado</p>
             <p class="presentacion__desencriptar__instrucciones">Ingresa el texto que desees encriptar o desencriptar.</p>
@@ -38,6 +38,9 @@
             Desarrollado por Duvan Riaño 
         </p>
     </footer>
+
+
+    <script src="index.js"></script>
     
 </body>
 </html>

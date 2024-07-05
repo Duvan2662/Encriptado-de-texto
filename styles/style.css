@@ -109,22 +109,22 @@ button {
     font-size: 16px;
 }
 
-#encriptar {
+.btnPrincipal {
     background-color: var(--color-secundario);
     color: var(--color-letras-boton);
 }
 
-#encriptar:hover {
+.btnPrincipal:hover {
     background-color: var(--color-hover-encriptar);
     color: var(--color-terciario);
 }
 
-#desencriptar {
+.btnSecundario {
     background-color: var(--color-hover-encriptar);
     color: var(--color-terciario);
 }
 
-#desencriptar:hover {
+.btnSecundario:hover {
     background-color: var(--color-hover-desencriptar);
     color: var(--color-letras-boton);
 }
