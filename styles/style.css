@@ -1,4 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --color-primario:#EEF4D4;
+    --color-secundario:#D63230;
+    --color-terciario:#000000;
+    
+
+    --color-letras-boton:#ffffff;
+
+    --color-hover-encriptar: #D8DFE8;
+    --color-hover-desencriptar:#333;
+    
+
+    --fuente-montserrat:'Montserrat', sans-serif;
+    --fuente-krona:'Krona One', sans-serif;
+
+}
 
 * {
     padding: 0;
@@ -7,15 +24,14 @@
 
 body {
     box-sizing: border-box;
-    background-color: #f6f6f6 ;
-    color: #000000;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
 }
 
 .header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f6f6f6;
     padding: 10px;
     height: 130px; 
 }
@@ -30,7 +46,7 @@ body {
 }
 
 .header__title h1 {
-    font-family:'Krona One', sans-serif;
+    font-family:var(--fuente-krona);
 }
 
 
@@ -54,24 +70,29 @@ body {
 textarea {
     width: 100%; 
     height: 550px;
-    border: 1px solid #ccc;
+    border: 1px solid #ffffff;
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 10px;
     resize: none;
     font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fuente-montserrat);
+}
+
+textarea:focus{
+    border-color: var(--color-secundario);
+    outline: none;
 }
 
 textarea::placeholder {
-    color: #0044cc;
+    color: var(--color-terciario);
     font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fuente-montserrat);
 }
 
 .presentacion__encriptar__nota {
     font-size: 18px;
-    color: #666;
+    color: var(--color-terciario);
     margin-bottom: 20px;
 }
 
@@ -89,23 +110,23 @@ button {
 }
 
 #encriptar {
-    background-color: #0044cc;
-    color: white;
+    background-color: var(--color-secundario);
+    color: var(--color-letras-boton);
 }
 
 #encriptar:hover {
-    background-color: #e0e0e0;
-    color: #0044cc;
+    background-color: var(--color-hover-encriptar);
+    color: var(--color-terciario);
 }
 
 #desencriptar {
-    background-color: #e0e0e0;
-    color: #333;
+    background-color: var(--color-hover-encriptar);
+    color: var(--color-terciario);
 }
 
 #desencriptar:hover {
-    background-color: #333;
-    color: #e0e0e0;
+    background-color: var(--color-hover-desencriptar);
+    color: var(--color-letras-boton);
 }
 
 .presentacion__desencriptar {
@@ -125,23 +146,23 @@ button {
     font-size: 33px;
     font-weight: bold;
     margin-bottom: 10px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fuente-montserrat);
 }
 
 .presentacion__desencriptar__instrucciones{
     font-size: 17px;
-    color: #666;
-    font-family: 'Montserrat', sans-serif;
+    color: var(--color-terciario);
+    font-family: var(--fuente-montserrat);
 }
 
 .footer{
-    background-color: white;
     padding: 1.5rem ;
-    color: black;
+    color: var(--color-secundario);
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fuente-krona);
     font-size: 1.5rem;
-    font-weight: 400 ;
+    /* font-weight: 400 ; */
+    font-weight: bold;
 }
 
 
